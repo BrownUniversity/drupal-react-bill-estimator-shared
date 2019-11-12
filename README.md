@@ -25,7 +25,9 @@ _Ensure you're on the network and that your SSH key has been added to the ssh-ag
 These libraries are not bundled with Drupal React Bill Estimator Shared and are required at runtime:
 
 - [**brown-university-styles**](https://bitbucket.brown.edu/projects/REACT/repos/brown-university-styles)
+- [**formik**](https://www.npmjs.com/package/formik)
 - [**react**](https://www.npmjs.com/package/react)
+- [**react-select**](https://www.npmjs.com/package/react-select)
 - [**styled-components**](https://www.npmjs.com/package/styled-components)
 
 ### 2. Import styles from Brown University Styles
