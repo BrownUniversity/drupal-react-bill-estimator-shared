@@ -261,5 +261,36 @@ styled.div(
 /*#__PURE__*/
 _templateObject$8(), breakpoints.md);
 
-export { AppHeading, AppWrapper, Field, FormGroup, Label, ResultsGroup, ResultsRow, Select, SelectWrapper };
+var BASE_URLS = {
+  qa: "***REMOVED***",
+  prod: "***REMOVED***"
+};
+
+var currencyFormatter =
+/*#__PURE__*/
+new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+  minimumFractionDigits: 2
+});
+
+function mungeFormData(formData) {
+  var result = {};
+  Object.entries(formData).map(function (_ref) {
+    var key = _ref[0],
+        value = _ref[1];
+    var numericKeys = ["brownScholarship", "federalGrants", "programTuitionFeeSupport", "loans"];
+
+    if (numericKeys.includes(key) && Number.isNaN(parseInt(value, 10))) {
+      result[key] = 0;
+    } else {
+      result[key] = value;
+    }
+
+    return undefined;
+  });
+  return result;
+}
+
+export { AppHeading, AppWrapper, BASE_URLS, Field, FormGroup, Label, ResultsGroup, ResultsRow, Select, SelectWrapper, currencyFormatter, mungeFormData };
 //# sourceMappingURL=drupal-react-bill-estimator-shared.esm.js.map

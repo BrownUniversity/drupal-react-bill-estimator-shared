@@ -265,8 +265,40 @@ styled.div(
 /*#__PURE__*/
 _templateObject$8(), brownUniversityStyles.breakpoints.md);
 
+var BASE_URLS = {
+  qa: "***REMOVED***",
+  prod: "***REMOVED***"
+};
+
+var currencyFormatter =
+/*#__PURE__*/
+new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+  minimumFractionDigits: 2
+});
+
+function mungeFormData(formData) {
+  var result = {};
+  Object.entries(formData).map(function (_ref) {
+    var key = _ref[0],
+        value = _ref[1];
+    var numericKeys = ["brownScholarship", "federalGrants", "programTuitionFeeSupport", "loans"];
+
+    if (numericKeys.includes(key) && Number.isNaN(parseInt(value, 10))) {
+      result[key] = 0;
+    } else {
+      result[key] = value;
+    }
+
+    return undefined;
+  });
+  return result;
+}
+
 exports.AppHeading = AppHeading;
 exports.AppWrapper = AppWrapper;
+exports.BASE_URLS = BASE_URLS;
 exports.Field = Field;
 exports.FormGroup = FormGroup;
 exports.Label = Label;
@@ -274,4 +306,6 @@ exports.ResultsGroup = ResultsGroup;
 exports.ResultsRow = ResultsRow;
 exports.Select = Select;
 exports.SelectWrapper = SelectWrapper;
+exports.currencyFormatter = currencyFormatter;
+exports.mungeFormData = mungeFormData;
 //# sourceMappingURL=drupal-react-bill-estimator-shared.cjs.development.js.map
