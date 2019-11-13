@@ -1,15 +1,13 @@
 import { Formik } from "formik";
 import * as React from "react";
-import "react-app-polyfill/ie11";
-import * as ReactDOM from "react-dom";
-import { Field, FormGroup, Label, Select, SelectWrapper } from "../.";
+import { Field, FormGroup, Label, Select, SelectWrapper } from "../../../dist";
 
 const selectValueOptions = [
   { value: false, label: "No" },
   { value: true, label: "Yes" }
 ];
 
-const App = () => {
+const Form = () => {
   return (
     <Formik
       initialValues={{
@@ -47,4 +45,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+export default Form;
