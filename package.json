@@ -2,7 +2,7 @@
   "name": "drupal-react-bill-estimator-shared",
   "description": "Common code for the undergrad and grad bill estimators",
   "author": "Colin Cummings <colin_cummings@brown.edu>, Emily Kasbohm <emily_kasbohm@brown.edu>",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "private": true,
   "main": "dist/index.js",
   "module": "dist/drupal-react-bill-estimator-shared.esm.js",
