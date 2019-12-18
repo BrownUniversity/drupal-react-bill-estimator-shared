@@ -1,4 +1,9 @@
-import { breakpoints, colors, getRems } from "brown-university-styles";
+import {
+  breakpoints,
+  colors,
+  getRems,
+  typography
+} from "brown-university-styles";
 import React from "react";
 import styled from "styled-components";
 
@@ -7,6 +12,7 @@ const Wrapper = styled(({ type, ...restProps }) => <div {...restProps} />)`
     type === "subtotal" ? "#f8f7f5" : colors.white};
   border-top: 1px solid ${colors.taupe};
   display: flex;
+  font-family: ${typography.sans};
   padding: 20px 0;
 `;
 
@@ -55,7 +61,7 @@ const ResultsRow: React.FC<ResultsRowProps> = ({
   testid = null
 }) => (
   <Wrapper type={type}>
-    <Label type={type}>{label}:</Label>
+    <Label type={type}>{label}</Label>
     <Value type={type} data-testid={testid ? `${testid}-value` : null}>
       <ValueInner>{value}</ValueInner>
     </Value>

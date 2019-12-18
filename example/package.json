@@ -12,6 +12,7 @@
     "react-app-polyfill": "^1.0.0"
   },
   "alias": {
+    "brown-university-components": "../node_modules/brown-university-components",
     "brown-university-styles": "../node_modules/brown-university-styles",
     "react": "../node_modules/react",
     "react-dom": "../node_modules/react-dom/profiling",

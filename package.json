@@ -17,6 +17,7 @@
     "build": "tsdx build"
   },
   "peerDependencies": {
+    "brown-university-components": "git+https://bitbucket.brown.edu/scm/react/brown-university-components.git#semver:^1.6",
     "brown-university-styles": "git+https://bitbucket.brown.edu/scm/react/brown-university-styles.git#semver:^0.10",
     "formik": "^2.0.0",
     "react": "^16.0.0",
@@ -29,6 +30,7 @@
     "@types/react-dom": "^16.9.4",
     "@types/react-select": "^3.0.8",
     "@types/styled-components": "^4.4.0",
+    "brown-university-components": "git+https://bitbucket.brown.edu/scm/react/brown-university-components.git#semver:^1.6",
     "brown-university-styles": "git+https://bitbucket.brown.edu/scm/react/brown-university-styles.git#semver:^0.10",
     "formik": "^2.0.3",
     "husky": "^3.0.9",
