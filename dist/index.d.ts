@@ -1,6 +1,6 @@
-export { default as AppHeading } from "./components/AppHeading";
 export { default as AppWrapper } from "./components/AppWrapper";
 export { default as Field } from "./components/Field";
+export { default as Form } from "./components/Form";
 export { default as FormGroup } from "./components/FormGroup";
 export { default as Label } from "./components/Label";
 export { default as ResultsGroup } from "./components/ResultsGroup";

@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Label = styled.label`
   color: ${colors.darkGray};
   font-family: ${typography.sansBold};
-  font-size: ${getRems(19)};
+  font-size: ${getRems(18)};
 `;
 
 export default Label;
