@@ -1,2 +1,2 @@
-export const outlineGray = "#d2d2d2";
+export const outlineGray = "#707070";
 export const lightRed = "#f2cccc";

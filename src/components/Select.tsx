@@ -8,16 +8,24 @@ const Select = styled(ReactSelect).attrs({
 })`
   .react-select__control {
     border-radius: 0;
+    color: ${outlineGray}
     font-family: ${typography.sans};
     font-size: ${getRems(18)};
     min-height: 42px;
-    outline: 1px solid ${outlineGray};
+    outline: 1px solid ${colors.taupe};
+
+    svg {
+       fill: ${colors.white};
+    }
   }
   .react-select__control--is-focused,
   .react-select__control--is-focused:hover {
     border-color: transparent;
     box-shadow: 0 0 0 0.2rem rgba(153, 153, 158, 0.6);
     outline: 0;
+  }
+  .react-select__indicators {
+    background-color: ${colors.red};
   }
   .react-select__single-value {
     color: ${colors.mediumGray};

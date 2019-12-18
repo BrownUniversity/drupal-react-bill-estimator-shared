@@ -1,6 +1,13 @@
 import { Formik } from "formik";
 import * as React from "react";
-import { Field, FormGroup, Label, Select, SelectWrapper } from "../../../dist";
+import {
+  Field,
+  Form as FormWrapper,
+  FormGroup,
+  Label,
+  Select,
+  SelectWrapper
+} from "../../../dist";
 
 const selectValueOptions = [
   { value: false, label: "No" },
@@ -17,9 +24,9 @@ const Form = () => {
       onSubmit={values => alert(JSON.stringify(values))}
     >
       {({ values, setFieldValue, setFieldTouched }) => (
-        <form>
+        <FormWrapper>
           <FormGroup>
-            <Label htmlFor="select-value-field">Select Value:</Label>
+            <Label htmlFor="select-value-field">Select Value</Label>
             <SelectWrapper>
               <Select
                 inputId="select-value-field"
@@ -36,10 +43,10 @@ const Form = () => {
             </SelectWrapper>
           </FormGroup>
           <FormGroup>
-            <Label htmlFor="input-value-field">Input:</Label>
+            <Label htmlFor="input-value-field">Input</Label>
             <Field id="input-value-field" name="inputValue" />
           </FormGroup>
-        </form>
+        </FormWrapper>
       )}
     </Formik>
   );

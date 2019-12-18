@@ -1,4 +1,4 @@
-import { colors, typography, breakpoints, getRems } from 'brown-university-styles';
+import { breakpoints, colors, typography, getRems } from 'brown-university-styles';
 import styled from 'styled-components';
 import { Field as Field$1 } from 'formik';
 import React from 'react';
@@ -29,24 +29,9 @@ function _taggedTemplateLiteralLoose(strings, raw) {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteralLoose(["\n  border-bottom: 2px solid ", ";\n  line-height: 1.69231;\n  font-family: ", ";\n  font-weight: 700;\n"]);
+  var data = _taggedTemplateLiteralLoose(["\n  padding: 0 10px;\n  margin: 40px 0;\n\n  @media (min-width: ", "px) {\n    padding: 0;\n    margin: 60px 0;\n  }\n\n  @media (min-width: ", "px) {\n    padding: 0 11.25%;\n    margin: 80px 0;\n  }\n"]);
 
   _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-var AppHeading =
-/*#__PURE__*/
-styled.h2(
-/*#__PURE__*/
-_templateObject(), colors.lightGray, typography.sans);
-
-function _templateObject$1() {
-  var data = _taggedTemplateLiteralLoose(["\n  padding: 0 10px;\n\n  @media (min-width: ", "px) {\n    padding: 0;\n  }\n"]);
-
-  _templateObject$1 = function _templateObject() {
     return data;
   };
 
@@ -56,15 +41,15 @@ var AppWrapper =
 /*#__PURE__*/
 styled.div(
 /*#__PURE__*/
-_templateObject$1(), breakpoints.md);
+_templateObject(), breakpoints.md, breakpoints.lg);
 
-var outlineGray = "#d2d2d2";
+var outlineGray = "#707070";
 var lightRed = "#f2cccc";
 
-function _templateObject$2() {
+function _templateObject$1() {
   var data = _taggedTemplateLiteralLoose(["\n  box-sizing: border-box;\n  border: 1px solid ", ";\n  color: ", ";\n  font-family: ", ";\n  font-size: ", ";\n  height: 42px;\n  padding: 2px 10px;\n"]);
 
-  _templateObject$2 = function _templateObject() {
+  _templateObject$1 = function _templateObject() {
     return data;
   };
 
@@ -74,12 +59,27 @@ var Field =
 /*#__PURE__*/
 styled(Field$1)(
 /*#__PURE__*/
-_templateObject$2(), outlineGray, colors.mediumGray, typography.sans,
+_templateObject$1(), colors.taupe, outlineGray, typography.sans,
 /*#__PURE__*/
 getRems(18));
 
+function _templateObject$2() {
+  var data = _taggedTemplateLiteralLoose(["\n  display: flex;\n  flex-direction: column;\n"]);
+
+  _templateObject$2 = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var Form =
+/*#__PURE__*/
+styled.form(
+/*#__PURE__*/
+_templateObject$2());
+
 function _templateObject$3() {
-  var data = _taggedTemplateLiteralLoose(["\n  margin-bottom: 15px;\n\n  label {\n    display: inline-block;\n    margin-bottom: 5px;\n  }\n\n  input,\n  select {\n    width: 100%;\n  }\n\n  @media (min-width: ", "px) {\n    display: flex;\n\n    label,\n    input,\n    select {\n      flex: 1;\n      padding: 8px;\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteralLoose(["\n  margin-bottom: 15px;\n  padding-bottom: 1.5rem;\n\n  label {\n    display: inline-block;\n    margin-bottom: 5px;\n  }\n\n  input,\n  select {\n    width: 100%;\n  }\n\n  @media (min-width: ", "px) {\n    display: flex;\n    padding-bottom: 0.75rem;\n\n    label,\n    input,\n    select {\n      flex: 1;\n      padding: 8px;\n    }\n\n    label {\n      flex-basis: 50%;\n    }\n  }\n"]);
 
   _templateObject$3 = function _templateObject() {
     return data;
@@ -108,10 +108,10 @@ styled.label(
 /*#__PURE__*/
 _templateObject$4(), colors.darkGray, typography.sansBold,
 /*#__PURE__*/
-getRems(19));
+getRems(18));
 
 function _templateObject$5() {
-  var data = _taggedTemplateLiteralLoose(["\n  border-top: 2px solid ", ";\n  margin-top: 15px;\n  padding-top: 10px;\n"]);
+  var data = _taggedTemplateLiteralLoose([""]);
 
   _templateObject$5 = function _templateObject() {
     return data;
@@ -123,10 +123,10 @@ var ResultsGroup =
 /*#__PURE__*/
 styled.div(
 /*#__PURE__*/
-_templateObject$5(), colors.lightGray);
+_templateObject$5());
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteralLoose(["\n  display: inline-block;\n  text-align: right;\n  width: 100%;\n\n  @media (min-width: ", "px) {\n    max-width: 125px;\n  }\n"]);
+  var data = _taggedTemplateLiteralLoose(["\n  display: inline-block;\n  width: 100%;\n\n  @media (min-width: ", "px) {\n    max-width: 125px;\n  }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -136,7 +136,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteralLoose(["\n  color: ", ";\n  font-family: ", ";\n  font-size: ", ";\n  flex: 1;\n  padding: 8px;\n"]);
+  var data = _taggedTemplateLiteralLoose(["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  flex: 1;\n  flex-basis: 30%;\n  padding: 8px;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -146,7 +146,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteralLoose(["\n  color: ", ";\n  flex: 1;\n  font-family: ", ";\n  font-size: ", ";\n  padding: 8px;\n"]);
+  var data = _taggedTemplateLiteralLoose(["\n  color: ", ";\n  flex: 1;\n  flex-basis: 70%;\n  font-size: ", ";\n  font-weight: ", ";\n  padding: 8px;\n\n  @media (min-width: ", "px) {\n    padding-right: 0px;\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -156,7 +156,7 @@ function _templateObject2() {
 }
 
 function _templateObject$6() {
-  var data = _taggedTemplateLiteralLoose(["\n  display: flex;\n  margin-bottom: 15px;\n"]);
+  var data = _taggedTemplateLiteralLoose(["\n  background-color: ", ";\n  border-top: 1px solid ", ";\n  display: flex;\n  padding: 20px 0;\n"]);
 
   _templateObject$6 = function _templateObject() {
     return data;
@@ -166,11 +166,6 @@ function _templateObject$6() {
 }
 var Wrapper =
 /*#__PURE__*/
-styled.div(
-/*#__PURE__*/
-_templateObject$6());
-var Label$1 =
-/*#__PURE__*/
 styled(function (_ref) {
   var type = _ref.type,
       restProps = _objectWithoutPropertiesLoose(_ref, ["type"]);
@@ -178,31 +173,47 @@ styled(function (_ref) {
   return React.createElement("div", Object.assign({}, restProps));
 })(
 /*#__PURE__*/
-_templateObject2(), function (_ref2) {
+_templateObject$6(), function (_ref2) {
   var type = _ref2.type;
-  return type === "item" ? colors.darkGray : colors.black;
-}, typography.sansBold, function (_ref3) {
-  var type = _ref3.type;
-  return type === "total" ? getRems(21) : getRems(19);
-});
-var Value =
+  return type === "subtotal" ? "#f8f7f5" : colors.white;
+}, colors.taupe);
+var Label$1 =
 /*#__PURE__*/
-styled(function (_ref4) {
-  var type = _ref4.type,
-      restProps = _objectWithoutPropertiesLoose(_ref4, ["type"]);
+styled(function (_ref3) {
+  var type = _ref3.type,
+      restProps = _objectWithoutPropertiesLoose(_ref3, ["type"]);
 
   return React.createElement("div", Object.assign({}, restProps));
 })(
 /*#__PURE__*/
-_templateObject3(), function (_ref5) {
+_templateObject2(), function (_ref4) {
+  var type = _ref4.type;
+  return type === "item" ? colors.darkGray : colors.black;
+}, function (_ref5) {
   var type = _ref5.type;
-  return type === "total" ? colors.black : colors.mediumGray;
+  return type === "total" ? getRems(21) : getRems(19);
 }, function (_ref6) {
   var type = _ref6.type;
-  return type === "item" ? typography.sans : typography.sansBold;
-}, function (_ref7) {
-  var type = _ref7.type;
+  return type === "total" && 700;
+}, breakpoints.md);
+var Value =
+/*#__PURE__*/
+styled(function (_ref7) {
+  var type = _ref7.type,
+      restProps = _objectWithoutPropertiesLoose(_ref7, ["type"]);
+
+  return React.createElement("div", Object.assign({}, restProps));
+})(
+/*#__PURE__*/
+_templateObject3(), function (_ref8) {
+  var type = _ref8.type;
+  return type === "subtotal" ? "#4a4a4a" : colors.black;
+}, function (_ref9) {
+  var type = _ref9.type;
   return type === "total" ? getRems(21) : getRems(19);
+}, function (_ref10) {
+  var type = _ref10.type;
+  return type === "total" && 700;
 });
 var ValueInner =
 /*#__PURE__*/
@@ -210,14 +221,16 @@ styled.span(
 /*#__PURE__*/
 _templateObject4(), breakpoints.md);
 
-var ResultsRow = function ResultsRow(_ref8) {
-  var _ref8$type = _ref8.type,
-      type = _ref8$type === void 0 ? "item" : _ref8$type,
-      label = _ref8.label,
-      value = _ref8.value,
-      _ref8$testid = _ref8.testid,
-      testid = _ref8$testid === void 0 ? null : _ref8$testid;
-  return React.createElement(Wrapper, null, React.createElement(Label$1, {
+var ResultsRow = function ResultsRow(_ref11) {
+  var _ref11$type = _ref11.type,
+      type = _ref11$type === void 0 ? "item" : _ref11$type,
+      label = _ref11.label,
+      value = _ref11.value,
+      _ref11$testid = _ref11.testid,
+      testid = _ref11$testid === void 0 ? null : _ref11$testid;
+  return React.createElement(Wrapper, {
+    type: type
+  }, React.createElement(Label$1, {
     type: type
   }, label, ":"), React.createElement(Value, {
     type: type,
@@ -226,7 +239,7 @@ var ResultsRow = function ResultsRow(_ref8) {
 };
 
 function _templateObject$7() {
-  var data = _taggedTemplateLiteralLoose(["\n  .react-select__control {\n    border-radius: 0;\n    font-family: ", ";\n    font-size: ", ";\n    min-height: 42px;\n    outline: 1px solid ", ";\n  }\n  .react-select__control--is-focused,\n  .react-select__control--is-focused:hover {\n    border-color: transparent;\n    box-shadow: 0 0 0 0.2rem rgba(153, 153, 158, 0.6);\n    outline: 0;\n  }\n  .react-select__single-value {\n    color: ", ";\n  }\n  .react-select__option {\n    color: ", ";\n    font-family: ", ";\n    font-size: ", ";\n  }\n  .react-select__option:active,\n  .react-select__option:hover {\n    background-color: ", ";\n  }\n  .react-select__option--is-focused {\n    background-color: ", ";\n  }\n  .react-select__option--is-selected,\n  .react-select__option--is-selected:active,\n  .react-select__option--is-selected:hover {\n    background-color: ", ";\n    color: white;\n  }\n  .react-select__indicator-separator {\n    display: none;\n  }\n"]);
+  var data = _taggedTemplateLiteralLoose(["\n  .react-select__control {\n    border-radius: 0;\n    color: ", "\n    font-family: ", ";\n    font-size: ", ";\n    min-height: 42px;\n    outline: 1px solid ", ";\n\n    svg {\n       fill: ", ";\n    }\n  }\n  .react-select__control--is-focused,\n  .react-select__control--is-focused:hover {\n    border-color: transparent;\n    box-shadow: 0 0 0 0.2rem rgba(153, 153, 158, 0.6);\n    outline: 0;\n  }\n  .react-select__indicators {\n    background-color: ", ";\n  }\n  .react-select__single-value {\n    color: ", ";\n  }\n  .react-select__option {\n    color: ", ";\n    font-family: ", ";\n    font-size: ", ";\n  }\n  .react-select__option:active,\n  .react-select__option:hover {\n    background-color: ", ";\n  }\n  .react-select__option--is-focused {\n    background-color: ", ";\n  }\n  .react-select__option--is-selected,\n  .react-select__option--is-selected:active,\n  .react-select__option--is-selected:hover {\n    background-color: ", ";\n    color: white;\n  }\n  .react-select__indicator-separator {\n    display: none;\n  }\n"]);
 
   _templateObject$7 = function _templateObject() {
     return data;
@@ -240,9 +253,9 @@ styled(ReactSelect).attrs({
   classNamePrefix: "react-select"
 })(
 /*#__PURE__*/
-_templateObject$7(), typography.sans,
+_templateObject$7(), outlineGray, typography.sans,
 /*#__PURE__*/
-getRems(18), outlineGray, colors.mediumGray, colors.darkGray, typography.sans,
+getRems(18), colors.taupe, colors.white, colors.red, colors.mediumGray, colors.darkGray, typography.sans,
 /*#__PURE__*/
 getRems(18), lightRed, lightRed, colors.red);
 
@@ -292,5 +305,5 @@ function mungeFormData(formData) {
   return result;
 }
 
-export { AppHeading, AppWrapper, BASE_URLS, Field, FormGroup, Label, ResultsGroup, ResultsRow, Select, SelectWrapper, currencyFormatter, mungeFormData };
+export { AppWrapper, BASE_URLS, Field, Form, FormGroup, Label, ResultsGroup, ResultsRow, Select, SelectWrapper, currencyFormatter, mungeFormData };
 //# sourceMappingURL=drupal-react-bill-estimator-shared.esm.js.map

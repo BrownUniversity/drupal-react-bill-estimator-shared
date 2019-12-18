@@ -5,8 +5,8 @@ import { outlineGray } from "../styles";
 
 const Field = styled(FormikField)`
   box-sizing: border-box;
-  border: 1px solid ${outlineGray};
-  color: ${colors.mediumGray};
+  border: 1px solid ${colors.taupe};
+  color: ${outlineGray};
   font-family: ${typography.sans};
   font-size: ${getRems(18)};
   height: 42px;
