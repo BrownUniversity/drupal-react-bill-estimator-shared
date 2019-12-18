@@ -1,6 +1,7 @@
 import { Formik } from "formik";
 import * as React from "react";
 import {
+  Button,
   Field,
   Form as FormWrapper,
   FormGroup,
@@ -46,6 +47,7 @@ const Form = () => {
             <Label htmlFor="input-value-field">Input</Label>
             <Field id="input-value-field" name="inputValue" />
           </FormGroup>
+          <Button size="large">Submit</Button>
         </FormWrapper>
       )}
     </Formik>
