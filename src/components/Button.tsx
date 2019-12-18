@@ -14,7 +14,7 @@ const Button = styled(BrownButton)`
   }
 
   @media (min-width: ${breakpoints.xl}px) {
-    padding: 80px auto;
+    margin: 80px auto;
   }
 
   &:hover,

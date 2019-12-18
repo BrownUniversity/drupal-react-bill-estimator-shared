@@ -45,7 +45,7 @@ styled.div(
 _templateObject(), breakpoints.md, breakpoints.lg);
 
 function _templateObject$1() {
-  var data = _taggedTemplateLiteralLoose(["\n  font-size: 13px;\n  letter-spacing: 1.5px;\n  padding: 15px 20px 16px;\n  margin: 40px auto 60px;\n  transition: background 0.25s, color 0.25s;\n\n  @media (min-width: ", "px) {\n    padding: 22px 30px 23px;\n  }\n\n  @media (min-width: ", "px) {\n    padding: 80px auto;\n  }\n\n  &:hover,\n  &:focus {\n    background: ", ";\n  }\n"]);
+  var data = _taggedTemplateLiteralLoose(["\n  font-size: 13px;\n  letter-spacing: 1.5px;\n  padding: 15px 20px 16px;\n  margin: 40px auto 60px;\n  transition: background 0.25s, color 0.25s;\n\n  @media (min-width: ", "px) {\n    padding: 22px 30px 23px;\n  }\n\n  @media (min-width: ", "px) {\n    margin: 80px auto;\n  }\n\n  &:hover,\n  &:focus {\n    background: ", ";\n  }\n"]);
 
   _templateObject$1 = function _templateObject() {
     return data;
