@@ -1,3 +1,4 @@
+export { default as AppHeading } from "./components/AppHeading";
 export { default as AppWrapper } from "./components/AppWrapper";
 export { default as Button } from "./components/Button";
 export { default as Field } from "./components/Field";

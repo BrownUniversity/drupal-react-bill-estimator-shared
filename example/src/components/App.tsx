@@ -1,12 +1,12 @@
 import * as React from "react";
-import { AppWrapper } from "../../../dist";
+import { AppHeading, AppWrapper } from "../../../dist";
 import Form from "./Form";
 import Results from "./Results";
 
 const App = () => {
   return (
     <AppWrapper>
-      <h2>Bill Estimator</h2>
+      <AppHeading>Bill Estimator</AppHeading>
       <Form />
       <Results />
     </AppWrapper>
