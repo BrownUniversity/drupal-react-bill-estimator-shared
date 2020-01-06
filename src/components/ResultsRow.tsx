@@ -1,9 +1,4 @@
-import {
-  breakpoints,
-  colors,
-  getRems,
-  typography
-} from "brown-university-styles";
+import { breakpoints, colors, typography } from "brown-university-styles";
 import React from "react";
 import styled from "styled-components";
 
@@ -11,16 +6,17 @@ const Wrapper = styled(({ type, ...restProps }) => <div {...restProps} />)`
   background-color: ${({ type }) =>
     type === "subtotal" ? "#f8f7f5" : colors.white};
   border-top: 1px solid ${colors.taupe};
+  color: #222;
   display: flex;
   font-family: ${typography.sans};
+  font-size: 18px;
+  font-size: 1.125rem;
   padding: 20px 0;
 `;
 
 const Label = styled(({ type, ...restProps }) => <div {...restProps} />)`
-  color: ${({ type }) => (type === "item" ? colors.darkGray : colors.black)};
   flex: 1;
   flex-basis: 70%;
-  font-size: ${({ type }) => (type === "total" ? getRems(21) : getRems(19))};
   font-weight: ${({ type }) => type === "total" && 700};
   padding: 8px;
 
@@ -30,8 +26,7 @@ const Label = styled(({ type, ...restProps }) => <div {...restProps} />)`
 `;
 
 const Value = styled(({ type, ...restProps }) => <div {...restProps} />)`
-  color: ${({ type }) => (type === "subtotal" ? "#4a4a4a" : colors.black)};
-  font-size: ${({ type }) => (type === "total" ? getRems(21) : getRems(19))};
+  color: ${({ type }) => type === "subtotal" && "#4a4a4a"};
   font-weight: ${({ type }) => type === "total" && 700};
   flex: 1;
   flex-basis: 30%;
