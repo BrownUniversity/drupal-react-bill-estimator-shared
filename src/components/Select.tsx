@@ -7,6 +7,7 @@ const Select = styled(ReactSelect).attrs({
   classNamePrefix: "react-select"
 })`
   .react-select__control {
+    border-color: rgb(183, 176, 156);
     border-radius: 0;
     color: ${outlineGray}
     font-family: ${typography.sans};

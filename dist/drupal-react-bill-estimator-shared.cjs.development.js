@@ -34,7 +34,7 @@ function _taggedTemplateLiteralLoose(strings, raw) {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteralLoose(["\n  font-family: ", ";\n  font-size: 28px;\n  font-weight: normal;\n  color: ", ";\n"]);
+  var data = _taggedTemplateLiteralLoose(["\n  font-family: ", ";\n  font-size: 28px;\n  font-weight: 700;\n  line-height: 1.69231;\n  border-bottom: 2px solid rgb(240, 243, 245);\n  color: ", ";\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -171,7 +171,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteralLoose(["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  flex: 1;\n  flex-basis: 30%;\n  padding: 8px;\n"]);
+  var data = _taggedTemplateLiteralLoose(["\n  color: ", ";\n  font-weight: ", ";\n  flex: 1;\n  flex-basis: 30%;\n  padding: 8px;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -181,7 +181,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteralLoose(["\n  color: ", ";\n  flex: 1;\n  flex-basis: 70%;\n  font-size: ", ";\n  font-weight: ", ";\n  padding: 8px;\n\n  @media (min-width: ", "px) {\n    padding-right: 0px;\n  }\n"]);
+  var data = _taggedTemplateLiteralLoose(["\n  flex: 1;\n  flex-basis: 70%;\n  font-weight: ", ";\n  padding: 8px;\n\n  @media (min-width: ", "px) {\n    padding-right: 0px;\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -191,7 +191,7 @@ function _templateObject2() {
 }
 
 function _templateObject$8() {
-  var data = _taggedTemplateLiteralLoose(["\n  background-color: ", ";\n  border-top: 1px solid ", ";\n  display: flex;\n  font-family: ", ";\n  padding: 20px 0;\n"]);
+  var data = _taggedTemplateLiteralLoose(["\n  background-color: ", ";\n  border-top: 1px solid ", ";\n  color: #222;\n  display: flex;\n  font-family: ", ";\n  font-size: 18px;\n  font-size: 1.125rem;\n  padding: 20px 0;\n"]);
 
   _templateObject$8 = function _templateObject() {
     return data;
@@ -223,31 +223,22 @@ styled(function (_ref3) {
 /*#__PURE__*/
 _templateObject2(), function (_ref4) {
   var type = _ref4.type;
-  return type === "item" ? brownUniversityStyles.colors.darkGray : brownUniversityStyles.colors.black;
-}, function (_ref5) {
-  var type = _ref5.type;
-  return type === "total" ? brownUniversityStyles.getRems(21) : brownUniversityStyles.getRems(19);
-}, function (_ref6) {
-  var type = _ref6.type;
   return type === "total" && 700;
 }, brownUniversityStyles.breakpoints.md);
 var Value =
 /*#__PURE__*/
-styled(function (_ref7) {
-  var type = _ref7.type,
-      restProps = _objectWithoutPropertiesLoose(_ref7, ["type"]);
+styled(function (_ref5) {
+  var type = _ref5.type,
+      restProps = _objectWithoutPropertiesLoose(_ref5, ["type"]);
 
   return React.createElement("div", Object.assign({}, restProps));
 })(
 /*#__PURE__*/
-_templateObject3(), function (_ref8) {
-  var type = _ref8.type;
-  return type === "subtotal" ? "#4a4a4a" : brownUniversityStyles.colors.black;
-}, function (_ref9) {
-  var type = _ref9.type;
-  return type === "total" ? brownUniversityStyles.getRems(21) : brownUniversityStyles.getRems(19);
-}, function (_ref10) {
-  var type = _ref10.type;
+_templateObject3(), function (_ref6) {
+  var type = _ref6.type;
+  return type === "subtotal" && "#4a4a4a";
+}, function (_ref7) {
+  var type = _ref7.type;
   return type === "total" && 700;
 });
 var ValueInner =
@@ -256,13 +247,13 @@ styled.span(
 /*#__PURE__*/
 _templateObject4(), brownUniversityStyles.breakpoints.md);
 
-var ResultsRow = function ResultsRow(_ref11) {
-  var _ref11$type = _ref11.type,
-      type = _ref11$type === void 0 ? "item" : _ref11$type,
-      label = _ref11.label,
-      value = _ref11.value,
-      _ref11$testid = _ref11.testid,
-      testid = _ref11$testid === void 0 ? null : _ref11$testid;
+var ResultsRow = function ResultsRow(_ref8) {
+  var _ref8$type = _ref8.type,
+      type = _ref8$type === void 0 ? "item" : _ref8$type,
+      label = _ref8.label,
+      value = _ref8.value,
+      _ref8$testid = _ref8.testid,
+      testid = _ref8$testid === void 0 ? null : _ref8$testid;
   return React.createElement(Wrapper, {
     type: type
   }, React.createElement(Label$1, {
@@ -274,7 +265,7 @@ var ResultsRow = function ResultsRow(_ref11) {
 };
 
 function _templateObject$9() {
-  var data = _taggedTemplateLiteralLoose(["\n  .react-select__control {\n    border-radius: 0;\n    color: ", "\n    font-family: ", ";\n    font-size: ", ";\n    min-height: 42px;\n    outline: 1px solid ", ";\n\n    svg {\n       fill: ", ";\n    }\n  }\n  .react-select__control--is-focused,\n  .react-select__control--is-focused:hover {\n    border-color: transparent;\n    box-shadow: 0 0 0 0.2rem rgba(153, 153, 158, 0.6);\n    outline: 0;\n  }\n  .react-select__indicators {\n    background-color: ", ";\n  }\n  .react-select__single-value {\n    color: ", ";\n  }\n  .react-select__option {\n    color: ", ";\n    font-family: ", ";\n    font-size: ", ";\n  }\n  .react-select__option:active,\n  .react-select__option:hover {\n    background-color: ", ";\n  }\n  .react-select__option--is-focused {\n    background-color: ", ";\n  }\n  .react-select__option--is-selected,\n  .react-select__option--is-selected:active,\n  .react-select__option--is-selected:hover {\n    background-color: ", ";\n    color: white;\n  }\n  .react-select__indicator-separator {\n    display: none;\n  }\n"]);
+  var data = _taggedTemplateLiteralLoose(["\n  .react-select__control {\n    border-color: rgb(183, 176, 156);\n    border-radius: 0;\n    color: ", "\n    font-family: ", ";\n    font-size: ", ";\n    min-height: 42px;\n    outline: 1px solid ", ";\n\n    svg {\n       fill: ", ";\n    }\n  }\n  .react-select__control--is-focused,\n  .react-select__control--is-focused:hover {\n    border-color: transparent;\n    box-shadow: 0 0 0 0.2rem rgba(153, 153, 158, 0.6);\n    outline: 0;\n  }\n  .react-select__indicators {\n    background-color: ", ";\n  }\n  .react-select__single-value {\n    color: ", ";\n  }\n  .react-select__option {\n    color: ", ";\n    font-family: ", ";\n    font-size: ", ";\n  }\n  .react-select__option:active,\n  .react-select__option:hover {\n    background-color: ", ";\n  }\n  .react-select__option--is-focused {\n    background-color: ", ";\n  }\n  .react-select__option--is-selected,\n  .react-select__option--is-selected:active,\n  .react-select__option--is-selected:hover {\n    background-color: ", ";\n    color: white;\n  }\n  .react-select__indicator-separator {\n    display: none;\n  }\n"]);
 
   _templateObject$9 = function _templateObject() {
     return data;
