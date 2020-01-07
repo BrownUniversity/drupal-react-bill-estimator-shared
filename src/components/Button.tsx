@@ -6,7 +6,7 @@ const Button = styled(BrownButton)`
   font-size: 13px;
   letter-spacing: 1.5px;
   padding: 15px 20px 16px;
-  margin: 40px auto 60px;
+  margin: 40px auto 10px;
   transition: background 0.25s, color 0.25s;
 
   @media (min-width: ${breakpoints.md}px) {
@@ -14,7 +14,7 @@ const Button = styled(BrownButton)`
   }
 
   @media (min-width: ${breakpoints.xl}px) {
-    margin: 80px auto;
+    margin: 80px auto 10px;
   }
 
   &:hover,
