@@ -60,7 +60,7 @@ styled.div(
 _templateObject$1(), breakpoints.md, breakpoints.lg);
 
 function _templateObject$2() {
-  var data = _taggedTemplateLiteralLoose(["\n  font-size: 13px;\n  letter-spacing: 1.5px;\n  padding: 15px 20px 16px;\n  margin: 40px auto 60px;\n  transition: background 0.25s, color 0.25s;\n\n  @media (min-width: ", "px) {\n    padding: 22px 30px 23px;\n  }\n\n  @media (min-width: ", "px) {\n    margin: 80px auto;\n  }\n\n  &:hover,\n  &:focus {\n    background: ", ";\n  }\n"]);
+  var data = _taggedTemplateLiteralLoose(["\n  font-size: 13px;\n  letter-spacing: 1.5px;\n  padding: 15px 20px 16px;\n  margin: 40px auto 10px;\n  transition: background 0.25s, color 0.25s;\n\n  @media (min-width: ", "px) {\n    padding: 22px 30px 23px;\n  }\n\n  @media (min-width: ", "px) {\n    margin: 80px auto 10px;\n  }\n\n  &:hover,\n  &:focus {\n    background: ", ";\n  }\n"]);
 
   _templateObject$2 = function _templateObject() {
     return data;
@@ -261,9 +261,24 @@ var ResultsRow = function ResultsRow(_ref8) {
 };
 
 function _templateObject$9() {
-  var data = _taggedTemplateLiteralLoose(["\n  .react-select__control {\n    border-color: rgb(183, 176, 156);\n    border-radius: 0;\n    color: ", "\n    font-family: ", ";\n    font-size: ", ";\n    min-height: 42px;\n    outline: 1px solid ", ";\n\n    svg {\n       fill: ", ";\n    }\n  }\n  .react-select__control--is-focused,\n  .react-select__control--is-focused:hover {\n    border-color: transparent;\n    box-shadow: 0 0 0 0.2rem rgba(153, 153, 158, 0.6);\n    outline: 0;\n  }\n  .react-select__indicators {\n    background-color: ", ";\n  }\n  .react-select__single-value {\n    color: ", ";\n  }\n  .react-select__option {\n    color: ", ";\n    font-family: ", ";\n    font-size: ", ";\n  }\n  .react-select__option:active,\n  .react-select__option:hover {\n    background-color: ", ";\n  }\n  .react-select__option--is-focused {\n    background-color: ", ";\n  }\n  .react-select__option--is-selected,\n  .react-select__option--is-selected:active,\n  .react-select__option--is-selected:hover {\n    background-color: ", ";\n    color: white;\n  }\n  .react-select__indicator-separator {\n    display: none;\n  }\n"]);
+  var data = _taggedTemplateLiteralLoose(["\n  font-family: ", ";\n  font-size: 14px;\n  text-align: center;\n  color: ", ";\n  margin-bottom: 60px;\n"]);
 
   _templateObject$9 = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var ResultsTime =
+/*#__PURE__*/
+styled.p(
+/*#__PURE__*/
+_templateObject$9(), typography.sans, colors.mediumGray);
+
+function _templateObject$a() {
+  var data = _taggedTemplateLiteralLoose(["\n  .react-select__control {\n    border-color: rgb(183, 176, 156);\n    border-radius: 0;\n    color: ", "\n    font-family: ", ";\n    font-size: ", ";\n    min-height: 42px;\n    outline: 1px solid ", ";\n\n    svg {\n       fill: ", ";\n    }\n  }\n  .react-select__control--is-focused,\n  .react-select__control--is-focused:hover {\n    border-color: transparent;\n    box-shadow: 0 0 0 0.2rem rgba(153, 153, 158, 0.6);\n    outline: 0;\n  }\n  .react-select__indicators {\n    background-color: ", ";\n  }\n  .react-select__single-value {\n    color: ", ";\n  }\n  .react-select__option {\n    color: ", ";\n    font-family: ", ";\n    font-size: ", ";\n  }\n  .react-select__option:active,\n  .react-select__option:hover {\n    background-color: ", ";\n  }\n  .react-select__option--is-focused {\n    background-color: ", ";\n  }\n  .react-select__option--is-selected,\n  .react-select__option--is-selected:active,\n  .react-select__option--is-selected:hover {\n    background-color: ", ";\n    color: white;\n  }\n  .react-select__indicator-separator {\n    display: none;\n  }\n"]);
+
+  _templateObject$a = function _templateObject() {
     return data;
   };
 
@@ -275,16 +290,16 @@ styled(ReactSelect).attrs({
   classNamePrefix: "react-select"
 })(
 /*#__PURE__*/
-_templateObject$9(), outlineGray, typography.sans,
+_templateObject$a(), outlineGray, typography.sans,
 /*#__PURE__*/
 getRems(18), colors.taupe, colors.white, colors.red, colors.mediumGray, colors.darkGray, typography.sans,
 /*#__PURE__*/
 getRems(18), lightRed, lightRed, colors.red);
 
-function _templateObject$a() {
+function _templateObject$b() {
   var data = _taggedTemplateLiteralLoose(["\n  @media (min-width: ", "px) {\n    flex: 1;\n    margin-left: -15px;\n  }\n"]);
 
-  _templateObject$a = function _templateObject() {
+  _templateObject$b = function _templateObject() {
     return data;
   };
 
@@ -294,7 +309,7 @@ var SelectWrapper =
 /*#__PURE__*/
 styled.div(
 /*#__PURE__*/
-_templateObject$a(), breakpoints.md);
+_templateObject$b(), breakpoints.md);
 
 var BASE_URLS = {
   qa: "***REMOVED***",
@@ -327,5 +342,5 @@ function mungeFormData(formData) {
   return result;
 }
 
-export { AppHeading, AppWrapper, BASE_URLS, Button, Field, Form, FormGroup, Label, ResultsGroup, ResultsRow, Select, SelectWrapper, currencyFormatter, mungeFormData };
+export { AppHeading, AppWrapper, BASE_URLS, Button, Field, Form, FormGroup, Label, ResultsGroup, ResultsRow, ResultsTime, Select, SelectWrapper, currencyFormatter, mungeFormData };
 //# sourceMappingURL=drupal-react-bill-estimator-shared.esm.js.map

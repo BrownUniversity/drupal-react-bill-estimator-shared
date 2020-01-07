@@ -1,9 +1,17 @@
 import * as React from "react";
-import { currencyFormatter, ResultsGroup, ResultsRow } from "../../../dist";
+import {
+  currencyFormatter,
+  ResultsGroup,
+  ResultsRow,
+  ResultsTime
+} from "../../../dist";
 
 const Results = () => {
   return (
     <>
+      <ResultsTime>
+        Last Estimated at: {new Date().toLocaleString()}
+      </ResultsTime>
       <ResultsGroup>
         <ResultsRow label="Item 1" value={currencyFormatter.format(1000)} />
         <ResultsRow label="Item 2" value={currencyFormatter.format(2000)} />
