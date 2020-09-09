@@ -12,19 +12,17 @@ Common code for the [undergrad](https://bitbucket.brown.edu/projects/DREACT/repo
 
 ```sh
 // npm
-npm i git+https://bitbucket.brown.edu/scm/dreact/drupal-react-bill-estimator-shared.git#semver:^1.9
+npm i git@github.com:BrownUniversity/drupal-react-bill-estimator-shared.git
 
 // yarn
-yarn add git+https://bitbucket.brown.edu/scm/dreact/drupal-react-bill-estimator-shared.git#^1.9
+yarn add git@github.com:BrownUniversity/drupal-react-bill-estimator-shared.git
 ```
-
-_Ensure you're on the network and that your SSH key has been added to the ssh-agent (`ssh-add ~/.ssh/id_rsa`) and uploaded to [bitbucket.brown.edu](https://bitbucket.brown.edu/plugins/servlet/ssh/account/keys)._
 
 #### Required Peer Dependencies
 
 These libraries are not bundled with Drupal React Bill Estimator Shared and are required at runtime:
 
-- [**brown-university-styles**](https://bitbucket.brown.edu/projects/REACT/repos/brown-university-styles)
+- [**brown-university-styles**](https://github.com/BrownUniversity/brown-university-styles/)
 - [**formik**](https://www.npmjs.com/package/formik)
 - [**react**](https://www.npmjs.com/package/react)
 - [**react-select**](https://www.npmjs.com/package/react-select)
@@ -36,13 +34,13 @@ These libraries are not bundled with Drupal React Bill Estimator Shared and are 
 
 ## Development
 
-### Install dependencies:
+### Install dependencies
 
 ```sh
 npm install
 ```
 
-### Recommended workflow:
+### Recommended workflow
 
 Run TSDX in one terminal:
 
@@ -60,13 +58,13 @@ npm install
 npm start
 ```
 
-### Lint:
+### Lint
 
-```
+```sh
 npm run lint
 ```
 
-### Test:
+### Test
 
 ```sh
 npm test
