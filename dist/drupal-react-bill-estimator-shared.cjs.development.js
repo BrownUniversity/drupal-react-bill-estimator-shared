@@ -1,5 +1,7 @@
 'use strict';
 
+Object.defineProperty(exports, '__esModule', { value: true });
+
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var brownUniversityStyles = require('brown-university-styles');
@@ -42,11 +44,7 @@ function _templateObject() {
 
   return data;
 }
-var AppHeading =
-/*#__PURE__*/
-styled.h2(
-/*#__PURE__*/
-_templateObject(), brownUniversityStyles.typography.sans, brownUniversityStyles.colors.brown);
+var AppHeading = /*#__PURE__*/styled.h2( /*#__PURE__*/_templateObject(), brownUniversityStyles.typography.sans, brownUniversityStyles.colors.brown);
 
 function _templateObject$1() {
   var data = _taggedTemplateLiteralLoose(["\n  padding: 0 10px;\n  margin: 40px 0;\n\n  @media (min-width: ", "px) {\n    padding: 0;\n    margin: 60px 0;\n  }\n\n  @media (min-width: ", "px) {\n    padding: 0 11.25%;\n    margin: 80px 0;\n  }\n"]);
@@ -57,11 +55,7 @@ function _templateObject$1() {
 
   return data;
 }
-var AppWrapper =
-/*#__PURE__*/
-styled.div(
-/*#__PURE__*/
-_templateObject$1(), brownUniversityStyles.breakpoints.md, brownUniversityStyles.breakpoints.lg);
+var AppWrapper = /*#__PURE__*/styled.div( /*#__PURE__*/_templateObject$1(), brownUniversityStyles.breakpoints.md, brownUniversityStyles.breakpoints.lg);
 
 function _templateObject$2() {
   var data = _taggedTemplateLiteralLoose(["\n  font-size: 13px;\n  letter-spacing: 1.5px;\n  padding: 15px 20px 16px;\n  margin: 40px auto 60px;\n  transition: background 0.25s, color 0.25s;\n\n  @media (min-width: ", "px) {\n    padding: 22px 30px 23px;\n  }\n\n  @media (min-width: ", "px) {\n    margin: 80px auto;\n  }\n\n  &:hover,\n  &:focus {\n    background: ", ";\n  }\n"]);
@@ -72,11 +66,7 @@ function _templateObject$2() {
 
   return data;
 }
-var Button =
-/*#__PURE__*/
-styled(brownUniversityComponents.Button)(
-/*#__PURE__*/
-_templateObject$2(), brownUniversityStyles.breakpoints.md, brownUniversityStyles.breakpoints.xl, brownUniversityStyles.colors.black);
+var Button = /*#__PURE__*/styled(brownUniversityComponents.Button)( /*#__PURE__*/_templateObject$2(), brownUniversityStyles.breakpoints.md, brownUniversityStyles.breakpoints.xl, brownUniversityStyles.colors.black);
 
 function _templateObject$3() {
   var data = _taggedTemplateLiteralLoose(["\n  animation: ", " 1500ms;\n\n  @keyframes fadeIn {\n    from {\n      opacity: 0;\n    }\n    to {\n      opacity: 1;\n    }\n  }\n\n  @keyframes fadeOut {\n    from {\n      opacity: 1;\n    }\n    to {\n      opacity: 0;\n    }\n  }\n"]);
@@ -96,16 +86,11 @@ var Fade = function Fade(_ref) {
   }, children) : null;
 };
 
-var FadeWrapper =
-/*#__PURE__*/
-styled(function (_ref2) {
-  var isVisible = _ref2.isVisible,
-      restProps = _objectWithoutPropertiesLoose(_ref2, ["isVisible"]);
+var FadeWrapper = /*#__PURE__*/styled(function (_ref2) {
+  var restProps = _objectWithoutPropertiesLoose(_ref2, ["isVisible"]);
 
   return React.createElement("div", Object.assign({}, restProps));
-})(
-/*#__PURE__*/
-_templateObject$3(), function (_ref3) {
+})( /*#__PURE__*/_templateObject$3(), function (_ref3) {
   var isVisible = _ref3.isVisible;
   return isVisible ? "fadeIn" : "fadeOut";
 });
@@ -122,13 +107,7 @@ function _templateObject$4() {
 
   return data;
 }
-var Field =
-/*#__PURE__*/
-styled(formik.Field)(
-/*#__PURE__*/
-_templateObject$4(), brownUniversityStyles.colors.taupe, outlineGray, brownUniversityStyles.typography.sans,
-/*#__PURE__*/
-brownUniversityStyles.getRems(18));
+var Field = /*#__PURE__*/styled(formik.Field)( /*#__PURE__*/_templateObject$4(), brownUniversityStyles.colors.taupe, outlineGray, brownUniversityStyles.typography.sans, /*#__PURE__*/brownUniversityStyles.getRems(18));
 
 function _templateObject$5() {
   var data = _taggedTemplateLiteralLoose(["\n  display: flex;\n  flex-direction: column;\n"]);
@@ -139,11 +118,7 @@ function _templateObject$5() {
 
   return data;
 }
-var Form =
-/*#__PURE__*/
-styled.form(
-/*#__PURE__*/
-_templateObject$5());
+var Form = /*#__PURE__*/styled.form( /*#__PURE__*/_templateObject$5());
 
 function _templateObject$6() {
   var data = _taggedTemplateLiteralLoose(["\n  margin-bottom: 15px;\n  padding-bottom: 1.5rem;\n\n  label {\n    display: inline-block;\n    margin-bottom: 5px;\n  }\n\n  input,\n  select {\n    width: 100%;\n  }\n\n  @media (min-width: ", "px) {\n    display: flex;\n    padding-bottom: 0.75rem;\n\n    label,\n    input,\n    select {\n      flex: 1;\n      padding: 8px;\n    }\n\n    label {\n      flex-basis: 50%;\n    }\n  }\n"]);
@@ -154,11 +129,7 @@ function _templateObject$6() {
 
   return data;
 }
-var FormGroup =
-/*#__PURE__*/
-styled.div(
-/*#__PURE__*/
-_templateObject$6(), brownUniversityStyles.breakpoints.md);
+var FormGroup = /*#__PURE__*/styled.div( /*#__PURE__*/_templateObject$6(), brownUniversityStyles.breakpoints.md);
 
 function _templateObject$7() {
   var data = _taggedTemplateLiteralLoose(["\n  color: ", ";\n  font-family: ", ";\n  font-size: ", ";\n  font-weigth: normal;\n"]);
@@ -169,13 +140,7 @@ function _templateObject$7() {
 
   return data;
 }
-var Label =
-/*#__PURE__*/
-styled.label(
-/*#__PURE__*/
-_templateObject$7(), brownUniversityStyles.colors.darkGray, brownUniversityStyles.typography.sans,
-/*#__PURE__*/
-brownUniversityStyles.getRems(18));
+var Label = /*#__PURE__*/styled.label( /*#__PURE__*/_templateObject$7(), brownUniversityStyles.colors.darkGray, brownUniversityStyles.typography.sans, /*#__PURE__*/brownUniversityStyles.getRems(18));
 
 function _templateObject$8() {
   var data = _taggedTemplateLiteralLoose([""]);
@@ -186,11 +151,7 @@ function _templateObject$8() {
 
   return data;
 }
-var ResultsGroup =
-/*#__PURE__*/
-styled.div(
-/*#__PURE__*/
-_templateObject$8());
+var ResultsGroup = /*#__PURE__*/styled.div( /*#__PURE__*/_templateObject$8());
 
 function _templateObject4() {
   var data = _taggedTemplateLiteralLoose(["\n  display: inline-block;\n  width: 100%;\n\n  @media (min-width: ", "px) {\n    max-width: 125px;\n  }\n"]);
@@ -231,53 +192,34 @@ function _templateObject$9() {
 
   return data;
 }
-var Wrapper =
-/*#__PURE__*/
-styled(function (_ref) {
-  var type = _ref.type,
-      restProps = _objectWithoutPropertiesLoose(_ref, ["type"]);
+var Wrapper = /*#__PURE__*/styled(function (_ref) {
+  var restProps = _objectWithoutPropertiesLoose(_ref, ["type"]);
 
   return React.createElement("div", Object.assign({}, restProps));
-})(
-/*#__PURE__*/
-_templateObject$9(), function (_ref2) {
+})( /*#__PURE__*/_templateObject$9(), function (_ref2) {
   var type = _ref2.type;
   return type === "subtotal" ? "#f8f7f5" : brownUniversityStyles.colors.white;
 }, brownUniversityStyles.colors.taupe, brownUniversityStyles.typography.sans);
-var Label$1 =
-/*#__PURE__*/
-styled(function (_ref3) {
-  var type = _ref3.type,
-      restProps = _objectWithoutPropertiesLoose(_ref3, ["type"]);
+var Label$1 = /*#__PURE__*/styled(function (_ref3) {
+  var restProps = _objectWithoutPropertiesLoose(_ref3, ["type"]);
 
   return React.createElement("div", Object.assign({}, restProps));
-})(
-/*#__PURE__*/
-_templateObject2(), function (_ref4) {
+})( /*#__PURE__*/_templateObject2(), function (_ref4) {
   var type = _ref4.type;
   return type === "total" && 700;
 }, brownUniversityStyles.breakpoints.md);
-var Value =
-/*#__PURE__*/
-styled(function (_ref5) {
-  var type = _ref5.type,
-      restProps = _objectWithoutPropertiesLoose(_ref5, ["type"]);
+var Value = /*#__PURE__*/styled(function (_ref5) {
+  var restProps = _objectWithoutPropertiesLoose(_ref5, ["type"]);
 
   return React.createElement("div", Object.assign({}, restProps));
-})(
-/*#__PURE__*/
-_templateObject3(), function (_ref6) {
+})( /*#__PURE__*/_templateObject3(), function (_ref6) {
   var type = _ref6.type;
   return type === "subtotal" && "#4a4a4a";
 }, function (_ref7) {
   var type = _ref7.type;
   return type === "total" && 700;
 });
-var ValueInner =
-/*#__PURE__*/
-styled.span(
-/*#__PURE__*/
-_templateObject4(), brownUniversityStyles.breakpoints.md);
+var ValueInner = /*#__PURE__*/styled.span( /*#__PURE__*/_templateObject4(), brownUniversityStyles.breakpoints.md);
 
 var ResultsRow = function ResultsRow(_ref8) {
   var _ref8$type = _ref8.type,
@@ -305,17 +247,9 @@ function _templateObject$a() {
 
   return data;
 }
-var Select =
-/*#__PURE__*/
-styled(ReactSelect).attrs({
+var Select = /*#__PURE__*/styled(ReactSelect).attrs({
   classNamePrefix: "react-select"
-})(
-/*#__PURE__*/
-_templateObject$a(), outlineGray, brownUniversityStyles.typography.sans,
-/*#__PURE__*/
-brownUniversityStyles.getRems(18), brownUniversityStyles.colors.taupe, brownUniversityStyles.colors.white, brownUniversityStyles.colors.red, brownUniversityStyles.colors.mediumGray, brownUniversityStyles.colors.darkGray, brownUniversityStyles.typography.sans,
-/*#__PURE__*/
-brownUniversityStyles.getRems(18), lightRed, lightRed, brownUniversityStyles.colors.red);
+})( /*#__PURE__*/_templateObject$a(), outlineGray, brownUniversityStyles.typography.sans, /*#__PURE__*/brownUniversityStyles.getRems(18), brownUniversityStyles.colors.taupe, brownUniversityStyles.colors.white, brownUniversityStyles.colors.red, brownUniversityStyles.colors.mediumGray, brownUniversityStyles.colors.darkGray, brownUniversityStyles.typography.sans, /*#__PURE__*/brownUniversityStyles.getRems(18), lightRed, lightRed, brownUniversityStyles.colors.red);
 
 function _templateObject$b() {
   var data = _taggedTemplateLiteralLoose(["\n  @media (min-width: ", "px) {\n    flex: 1;\n    margin-left: -15px;\n  }\n"]);
@@ -326,20 +260,14 @@ function _templateObject$b() {
 
   return data;
 }
-var SelectWrapper =
-/*#__PURE__*/
-styled.div(
-/*#__PURE__*/
-_templateObject$b(), brownUniversityStyles.breakpoints.md);
+var SelectWrapper = /*#__PURE__*/styled.div( /*#__PURE__*/_templateObject$b(), brownUniversityStyles.breakpoints.md);
 
 var BASE_URLS = {
   qa: "***REMOVED***",
   prod: "***REMOVED***"
 };
 
-var currencyFormatter =
-/*#__PURE__*/
-new Intl.NumberFormat("en-US", {
+var currencyFormatter = /*#__PURE__*/new Intl.NumberFormat("en-US", {
   style: "currency",
   currency: "USD",
   minimumFractionDigits: 2
