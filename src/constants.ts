@@ -1,4 +1,4 @@
 export const BASE_URLS = {
-  qa: "***REMOVED***",
-  prod: "***REMOVED***"
+  qa: "https://webservices-proxy.cis-qas.brown.edu/",
+  prod: "https://webservices-proxy.brown.edu/"
 };
