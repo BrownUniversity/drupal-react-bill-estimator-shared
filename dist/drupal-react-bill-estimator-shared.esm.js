@@ -257,8 +257,8 @@ function _templateObject$b() {
 var SelectWrapper = /*#__PURE__*/styled.div( /*#__PURE__*/_templateObject$b(), breakpoints.md);
 
 var BASE_URLS = {
-  qa: "***REMOVED***",
-  prod: "***REMOVED***"
+  qa: "https://webservices-proxy.cis-qas.brown.edu/",
+  prod: "https://webservices-proxy.brown.edu/"
 };
 
 var currencyFormatter = /*#__PURE__*/new Intl.NumberFormat("en-US", {
